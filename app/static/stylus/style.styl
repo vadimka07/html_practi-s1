@@ -1,0 +1,82 @@
+// @import url("fonts/stylesheet.css")
+@import url("../fonts/stylesheet.css")
+@import "Normalaize.styl"
+@import "variable.styl"
+@import "mixin.styl"
+@import "animation.styl"
+@import "common.styl"
+
+
+h1
+    font-size: vw(60)
+    color: colorWhite
+    ffRufinaB()
+    line-height: 1
+    margin-top vw(75)
+    @media tablet
+        font-size: vwm(24)
+        line-height: 1
+        text-align: center
+        margin-top vwm(35)
+    span
+        color: colorBorderInput
+.wrapper
+    width: vw(1920 - 390*2)
+    margin: 0 auto
+    @media tablet
+       width: vwm(375 - 25 * 2)
+
+body
+    ffr()
+    font-size vw(28)
+    color: colorAllDocument
+    @media desktopHighResolution
+        font-size 28px
+    @media tablet
+        font-size vwm(15)
+    &.hidden
+        overflow hidden
+header
+    width: 100%
+    position: fixed
+    z-index: 90
+    height: vw(95)
+    display: flex
+    justify-content: center
+    @media tablet
+        padding vwm(10) vwm(20)
+        height: vwm(70)
+        background-color: bgColorAllDocument
+    .wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+nav
+    display: flex
+    justify-content space-between
+    align-items: flex-end
+    width: vw(750)
+.logo
+    color: colorLogo
+    font-size vw(30)
+    text-decoration: none
+    display: flex
+    flex-direction: column
+    align-items: center
+.menu
+    display: flex
+    justify-content: space-between
+    width: vw(457)
+    li 
+        a
+            text-decoration: none
+            color: colorMenu
+            text-transform: uppercase
+            font-size vw(14)
+            ffm()
+.top-section
+    padding-top: vw(290)
+    span
+        font-size vw(15)
+        text-transform: uppercase
+        color: colorSpan

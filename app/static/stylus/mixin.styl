@@ -1,0 +1,53 @@
+desktop = 1920px
+vw(size)
+	((size / desktop) * 100)vw
+
+px(size)
+	((size / 100) * desktop)px
+
+mobile = 375px
+vwm(size)
+	((size / mobile) * 100)vw
+
+// root-font-size: 16px
+// rem(size)
+// 	size / root-font-size * 1rem
+
+//color text Section 1
+colorTextTopSection()
+	color: colorTextSection1
+//font family bold -> font name in variable file variable.styl
+ffr()
+	font-family: RobotoRegular
+//font family black -> font name in variable file variable.styl
+ffm()
+	font-family: RobotoMedium
+//font family regular -> font name in variable file variable.styl
+ffb()
+	font-family: RobotoBold
+//font family regular -> font name in variable file variable.styl
+ffblack()
+	font-family: none
+//font family bold -> font name in variable file variable.styl
+ffRufina()
+	font-family: Rufina
+//font family bold -> font name in variable file variable.styl
+ffRufinaB()
+	font-family: RufinaBold
+//font family bold -> font name in variable file variable.styl
+
+
+.path {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: dash 5s linear alternate
+}
+
+@keyframes dash {
+	from {
+		stroke-dashoffset: 822
+	}
+	to {
+		stroke-dashoffset: 0
+	}
+}
