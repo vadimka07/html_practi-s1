@@ -9,9 +9,9 @@
 
 h1
     font-size: vw(60)
-    color: colorWhite
+    color: colorTitle
     ffRufinaB()
-    line-height: 1
+    line-height: 1.5
     margin-top vw(75)
     @media tablet
         font-size: vwm(24)
@@ -20,6 +20,13 @@ h1
         margin-top vwm(35)
     span
         color: colorBorderInput
+h2
+    font-size vw(42)
+    color: colorTitle
+    ffRufinaB()
+
+p
+    font-size vw(15)
 .wrapper
     width: vw(1920 - 390*2)
     margin: 0 auto
@@ -43,6 +50,7 @@ header
     height: vw(95)
     display: flex
     justify-content: center
+    background-color colorWhite
     @media tablet
         padding vwm(10) vwm(20)
         height: vwm(70)
@@ -76,7 +84,29 @@ nav
             ffm()
 .top-section
     padding-top: vw(290)
+    padding-bottom: vw(290)
     span
         font-size vw(15)
         text-transform: uppercase
         color: colorSpan
+    p
+        margin-top: vw(40)
+    &__container
+        width: vw(540)
+    .container-buttons
+        margin-top vw(50)
+        .reserved
+            color: colorWhite
+            background-color colorSpan
+            text-decoration: none
+            font-size vw(13)
+            padding: vw(15) vw(25)
+            text-transform: uppercase
+        .watch
+            font-size vw(15)
+            background: none
+            border: none
+.about-us
+    text-align: center
+.procedures
+    text-align: center

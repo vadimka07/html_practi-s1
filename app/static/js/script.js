@@ -11,18 +11,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	});
 
-	const scrollToAnchor 	= document.querySelectorAll('a[href^="#"]');
-	scrollToAnchor.forEach(function(element) {
-		element.addEventListener("click", function (e) {
-			e.preventDefault();
-			const attributeLink = document.querySelector(this.getAttribute('href'));
-				attributeLink.scrollIntoView({
-					block: "start",
-					behavior: "smooth"
-				});
-		})
+	// const scrollToAnchor 	= document.querySelectorAll('a[href^="#"]');
+	// scrollToAnchor.forEach(function(element) {
+	// 	element.addEventListener("click", function (e) {
+	// 		e.preventDefault();
+	// 		const attributeLink = document.querySelector(this.getAttribute('href'));
+	// 			attributeLink.scrollIntoView({
+	// 				block: "start",
+	// 				behavior: "smooth"
+	// 			});
+	// 	})
 
-	});
+	// });
 
 
 })
