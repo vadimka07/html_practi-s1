@@ -61,6 +61,7 @@ nav
             color: colorMenu
             text-transform: uppercase
             font-size vw(14)
+            letter-spacing: 0.1px
             ffm()
 .top-section
     padding-top: vw(290)
@@ -324,3 +325,37 @@ nav
             text-transform: uppercase
             display: block
 
+footer
+    padding: vw(100) 0
+    background-color: bgColorFooter
+    nav
+        flex-direction: column
+        align-items: center
+        width: auto
+    .menu
+        margin-top: vw(50)
+    .social-icon
+        margin-top vw(45)
+        display: flex
+        li
+            width: vw(44)
+            display: flex
+            justify-content: center
+            align-items: center
+            &:not(:last-child)
+                border-right: borderSocialIconFooter
+            a
+                font-size vw(14)
+                color: colorFontsIconsFooter
+                transition: .3s
+            &:hover
+                a
+                    color: colorButtonSudmitForm
+    p
+        text-transform: uppercase
+        margin-top vw(45)
+        text-align: center
+        letter-spacing: 0.1px
+        a
+            color colorButtonSudmitForm
+            text-decoration: none
