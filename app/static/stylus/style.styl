@@ -7,26 +7,6 @@
 @import "common.styl"
 
 
-h1
-    font-size: vw(60)
-    color: colorTitle
-    ffRufinaB()
-    line-height: 1.5
-    margin-top vw(75)
-    @media tablet
-        font-size: vwm(24)
-        line-height: 1
-        text-align: center
-        margin-top vwm(35)
-    span
-        color: colorBorderInput
-h2
-    font-size vw(42)
-    color: colorTitle
-    ffRufinaB()
-
-p
-    font-size vw(15)
 .wrapper
     width: vw(1920 - 390*2)
     margin: 0 auto
@@ -108,5 +88,239 @@ nav
             border: none
 .about-us
     text-align: center
+    .wrapper
+        width: 100%
+        img
+            margin: 0 auto
+    h2
+        margin-top vw(28)
+    span
+        text-transform: uppercase
+        font-size vw(20)
+    &__list-items
+        display: flex
+        justify-content: space-between
+    &__list-item
+        flex-basis: vw(475)
+        min-height: vw(570)
+        display: flex
+        background-color bgColorAboutUsListItem
+        align-items: center
+        justify-content center
+        transition: .3s
+        &:hover
+            background-color: bgColorAboutUsListItemHover
+            .hover
+                visibility: visible
+        .hover
+            visibility hidden
+            img
+                display: block
+                margin: 0 auto
+                transition: .3s
+            p
+                color: colorWhite
+                ffRufinaB()
+                margin-top vw(20)
+                font-size vw(22)
+                transition: .3s
 .procedures
+.blog
     text-align: center
+    &__list-items
+        display: flex
+    &__list-item
+        width: calc(100% / 3 - vw(30))
+        border: boderPproceduresListItem
+        transition: .3s
+        padding: vw(20)
+        margin: 0 vw(15)
+        &:hover
+            box-shadow: boxShadoPproceduresListItem
+            border-color: transparent
+    &__item-image
+        margin: 0
+    h3
+        margin-top vw(30)
+    p
+        margin-top vw(20)
+.reviews
+    background-color: bgColorSectionReviews
+    padding vw(135) 0
+    .wrapper
+        .qoute
+            margin: 0 auto
+.our-team
+    padding: vw(140) 0 vw(210)
+    &__list-items
+        display: flex
+        flex-wrap: wrap
+        margin: vw(90) -15px 0
+    &__list-item
+        width: calc(100% / 3 - 30px)
+        margin: 0 15px
+        text-align: center
+        &__container
+            width: 80%
+            margin: -15% auto 0
+            background-color colorWhite
+            padding vw(35) 0
+            transition: .3s
+        &:hover
+            .our-team__list-item__container
+                transform: translateY(-35%)
+                box-shadow: boxShadowOurTeamListItem
+            .our-team__list-social-icons
+                visibility: visible
+                height auto
+    &__image
+        min-height: vw(435)
+        background-color #f1f1f1
+    &__list-social-icons
+        display: flex
+        justify-content: center
+        margin-top vw(25)
+        visibility hidden
+        a
+            color: colorMenu
+            font-size vw(12)
+            width: vw(32)
+            height vw(32)
+            border-radius: 100%
+            border: 1px solid colorMenu
+            display: flex
+            align-items: center
+            justify-content center
+            text-decoration: none
+            transition: .3s
+        li
+            margin: 0 vw(6)
+            &:hover
+                a
+                    color: colorWhite
+                    background-color: colorSpan
+                    border-color: colorSpan
+.form-order
+    background-color: #fff9f8
+    .wrapper
+        width: 100%
+        display: flex
+    &__image
+        flex-basis: 100%
+        flex-grow: 1
+    &__form-wrapper
+        padding-right: vw(400)
+        display: flex
+        align-items: center
+        form
+            display: flex
+            flex-wrap: wrap
+            justify-content space-between
+            input
+            select
+                width: 48%
+                border-bottom: 1px solid red
+                border-top: none
+                border-left: none
+                border-right: none
+                background: transparent
+                box-sizing: border-box
+                text-transform: uppercase
+                padding: vw(10) 0
+                margin-top: vw(25)
+
+            textarea
+                width: 100%
+                background-color: transparent
+                border: none
+                margin-top: vw(70)
+                text-transform: uppercase
+                border-bottom: 1px solid red
+                resize: none
+
+            button
+                color: colorWhite
+                background-color colorSpan
+                ffm()
+                text-decoration: none
+                font-size vw(13)
+                padding: vw(15) vw(25)
+                border-radius: 60px
+                margin: vw(20) auto 0 0
+                border: none
+
+.contacts
+    padding vw(60) 0
+    p
+        max-width: 60%
+        margin: vw(15) auto 0
+        text-align: center
+    .form-wrapper
+        display: flex
+        justify-content: space-between
+        margin-top vw(90)
+        ul
+            width: 23%
+            li
+                display: flex
+                align-items: center
+                line-height: 2
+                &:not(:first-child)
+                    margin-top vw(50)
+                .fa
+                    background-color: colorButtonSudmitForm
+                    border-radius: 100%
+                    width: vw(50)
+                    height: vw(50)
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    color: #fff
+                    font-size: vw(22)
+                    flex-shrink: 0
+    
+        form
+            width: 50%
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            input
+                font-size vw(12)
+                padding: vw(15)
+                width: 100%
+                box-sizing: border-box
+                text-transform: uppercase
+                border: boderPproceduresListItem
+                &:not(:first-child)
+                    margin-top vw(20)
+            textarea
+                padding-top: vw(25)
+                padding-left: vw(15)
+                width: 100%
+                box-sizing: border-box
+                margin-top vw(20)
+                text-transform: uppercase
+                border:  boderPproceduresListItem
+                resize: none
+                max-height: vw(150)
+                height: vw(150)
+            button
+                margin-top vw(30)
+                background-color: colorButtonSudmitForm
+                border: none
+                padding: vw(20) vw(44)
+                border-radius: 30px
+                color: colorWhite
+                text-transform: uppercase
+                ffm()
+    &__wrapper-link
+        margin-left: vw(30)
+        font-size vw(14)
+
+        a
+            text-decoration: none
+            color: colorAllDocument
+            font-size vw(14)
+            text-transform: uppercase
+            display: block
+

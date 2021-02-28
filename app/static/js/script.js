@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-	let thumbsSlider = new Swiper(".slider", {
+	new Swiper(".slider_reviews", {
 		spaceBetween: 10,
 		slidesPerView: 1,
+		 pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		},
 		breakpoints: {
 			992: {
 				slidesPerView: 1,

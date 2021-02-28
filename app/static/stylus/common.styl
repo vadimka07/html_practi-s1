@@ -1,5 +1,36 @@
 //common style
 
+img
+    max-width: 100%
+    display: block
+h1
+    font-size: vw(60)
+    color: colorTitle
+    ffRufinaB()
+    line-height: 1.5
+    margin-top vw(75)
+    @media tablet
+        font-size: vwm(24)
+        line-height: 1
+        text-align: center
+        margin-top vwm(35)
+    span
+        color: colorBorderInput
+h2
+    font-size vw(42)
+    color: colorTitle
+    ffRufinaB()
+    text-align: center
+h3
+    color: colorTitle
+    line-height: (27 / 22)
+    ffRufinaB()
+    font-size vw(22)
+
+p
+    font-size vw(15)
+    line-height: (28 / 15)
+
 .button
     color: colorWhite
     background-color colorSpan
@@ -11,6 +42,45 @@
     display: block
     width: vw(150)
     margin: vw(65) auto 0
+
+.slider_reviews
+    margin-top vw(45)
+    .slide
+        text-align: center
+        p
+            color: colorMenu
+            font-size vw(18)
+            width: 70%
+            margin: auto
+        .photo
+            width: vw(80)
+            height vw(80)
+            margin: vw(45) auto 0
+            border-radius: 100%
+            overflow hidden
+            img
+                object-fit: cover
+                object-position: top
+        h3
+            margin-top vw(25)
+            span
+                ffl()
+                font-size vw(15)
+.swiper-pagination
+    &.swiper-pagination-bullets
+        margin: 20px auto 0
+        display: flex
+        justify-content: center
+        .swiper-pagination-bullet
+            width: 10px
+            height: 10px
+            background: #ffc3c2
+            border-radius: 100%
+            margin: 0 10px
+            &-active
+                background-color: #ff817e
+
+
 
 //breadcrumbs
 
